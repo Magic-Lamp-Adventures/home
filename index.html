@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Magic Lamp Adventures</title>
+  <!-- Meta Tags for SEO -->
+  <meta name="description" content="Embark on magical journeys with Magic Lamp Adventures.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts (optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" 
+    rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo-container">
+      <!-- Replace 'magic-lamp-logo.jpg' with your actual logo file -->
+      <img src="images/magic-lamp-logo.jpg" alt="Magic Lamp Adventures Logo" class="logo">
+      <h1 class="company-name">Magic Lamp Adventures</h1>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h2>Experience the Magic of Travel</h2>
+      <p>Let us craft unforgettable journeys, where every moment is a story.</p>
+      <a href="#contact" class="cta-button">Plan Your Adventure</a>
+    </div>
+  </section>
+
+  <!-- SERVICES / HIGHLIGHTS SECTION -->
+  <section class="services-section">
+    <h2>Our Specialties</h2>
+    <div class="services-container">
+
+      <div class="service-box">
+        <h3>Exotic Destinations</h3>
+        <p>Discover hidden gems and iconic landmarks across the globe.</p>
+      </div>
+
+      <div class="service-box">
+        <h3>Luxury Travel</h3>
+        <p>Indulge in the finest experiences with world-class accommodations.</p>
+      </div>
+
+      <div class="service-box">
+        <h3>Adventure Packages</h3>
+        <p>Embark on thrilling escapades tailored for the adventurer in you.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT / LEAD FORM -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Ready to make your travel dreams come true? Let us know!</p>
+
+    <form 
+      class="contact-form" 
+      action="https://formspree.io/f/your-form-id" 
+      method="POST"
+    >
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="submit-button">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Magic Lamp Adventures. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Update the footer year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
